@@ -1,0 +1,7 @@
+<library path="elfin_hardware_interface">
+  <class name="elfin_hardware_interface/ElfinHWInterface" type="elfin_hardware_interface::ElfinHWInterface" base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Elfin hardware interface for ROS2 control
+    </description>
+  </class>
+</library>
