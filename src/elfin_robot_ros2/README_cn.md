@@ -98,4 +98,4 @@ MoveIt RViz 插件教程见：
 
 根目录附带了一份架构文档，建议配合阅读：
 
-- [/home/xpm/workspace/elfin-ros2-visualizer-tools/docs/ARCHITECTURE.md](/home/xpm/workspace/elfin-ros2-visualizer-tools/docs/ARCHITECTURE.md)
+- [../../docs/ARCHITECTURE.md](../../docs/ARCHITECTURE.md)

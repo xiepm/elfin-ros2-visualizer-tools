@@ -103,7 +103,7 @@ bash run_elfin_visualize.sh elfin5
 
 详细架构文档见：
 
-- [docs/ARCHITECTURE.md](/home/xpm/workspace/elfin-ros2-visualizer-tools/docs/ARCHITECTURE.md)
+- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
 这里给一个简版：
 
@@ -132,5 +132,5 @@ bash run_elfin_visualize.sh elfin5
 
 源内原始说明文档已更新为 Humble 视角，可参考：
 
-- [src/elfin_robot_ros2/README.md](/home/xpm/workspace/elfin-ros2-visualizer-tools/src/elfin_robot_ros2/README.md)
-- [src/elfin_robot_ros2/README_cn.md](/home/xpm/workspace/elfin-ros2-visualizer-tools/src/elfin_robot_ros2/README_cn.md)
+- [src/elfin_robot_ros2/README.md](src/elfin_robot_ros2/README.md)
+- [src/elfin_robot_ros2/README_cn.md](src/elfin_robot_ros2/README_cn.md)
