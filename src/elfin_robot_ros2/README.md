@@ -9,20 +9,21 @@ Chinese version of the README -> please [click here](./README_cn.md)
   <img src="docs/images/elfin.png" />
 </p>
 
-This repository provides ROS2 support for the Elfin Robot. The recommend operating environment is on Ubuntu 20.04 with ROS Foxy. So far These packages haven't been tested in other environment.
+This repository provides ROS2 support for Elfin robots. In this workspace, the recommended environment is Ubuntu 22.04 with ROS2 Humble.
 
 ### Installation
 
-#### Ubuntu 20.04 + ROS Foxy
+#### Ubuntu 22.04 + ROS2 Humble
 
 **Install some important dependent software packages:**
 ```sh
-$ sudo apt-get install ros-foxy-joint-trajectory-controller
-$ sudo apt-get install ros-foxy-controller-manager
-$ sudo apt-get install ros-foxy-trajectory-msgs
-$ sudo apt-get install ros-foxy-gazebo-ros2-control*
-$ sudo apt-get install ros-foxy-joint-state-controller
-$ sudo apt-get install ros-foxy-position-controllers
+$ sudo apt-get install ros-humble-joint-trajectory-controller
+$ sudo apt-get install ros-humble-controller-manager
+$ sudo apt-get install ros-humble-trajectory-msgs
+$ sudo apt-get install ros-humble-gazebo-ros2-control
+$ sudo apt-get install ros-humble-joint-state-publisher
+$ sudo apt-get install ros-humble-joint-state-publisher-gui
+$ sudo apt-get install ros-humble-position-controllers
 ```
 
 **Install related software packages:**
@@ -40,23 +41,25 @@ Install/Upgrade MoveIt!:
 
 ```sh
 $ sudo apt-get update
-$ sudo apt-get install ros-foxy-moveit
+$ sudo apt-get install ros-humble-moveit
 ```
 
 
 **Install this repository from Source**
 
-First set up a catkin workspace (see [this tutorials](http://wiki.ros.org/catkin/Tutorials)).  
-Then clone the repository into the src/ folder. It should look like /path/to/your/catkin_workspace/src/elfin_robot.  
-Make sure to source the correct setup file according to your workspace hierarchy, then use catkin_make to compile.  
-
-Assuming your catkin workspace folder is ~/catkin_ws, you should use the following commands:
+This repository is already arranged as a ROS2 workspace root. Assuming your workspace folder is `~/elfin-ros2-visualizer-tools`, use:
 ```sh
-$ cd ~/catkin_ws/src
-$ git clone -b foxy_ethercat https://github.com/huayan-robotics/elfin_robot_ros2.git
-$ cd ..
+$ git clone https://github.com/xiepm/elfin-ros2-visualizer-tools.git
+$ cd ~/elfin-ros2-visualizer-tools
+$ source /opt/ros/humble/setup.bash
 $ colcon build
 $ source install/setup.bash
+```
+
+For a lightweight visualization-only flow, you can also run:
+
+```sh
+$ bash run_elfin_visualize.sh elfin5
 ```
 
 
